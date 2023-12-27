@@ -1,5 +1,1 @@
-$ dig mishamie.fun +noall +answer -t A
-> mishamie.fun    3600    IN A     185.199.108.153
-> mishamie.fun    3600    IN A     185.199.109.153
-> mishamie.fun    3600    IN A     185.199.110.153
-> mishamie.fun    3600    IN A     185.199.111.15
+mishamie.fun
