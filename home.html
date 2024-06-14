@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="home_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mishamie.github.io">
+    <meta property="og:title" content="Mishamie">
+    <meta property="og:description" content="Мой сайт для практики разных приколов хд">
+    <meta property="og:image" content="og_logo.png">
+
+    <title>Mishamie</title>
+    
+
+    <script>
+        function ChangeImage(id, src){
+
+            document.getElementById(id).src = src
+
+        }
+        
+        function ChangeText(id, newtext){
+
+            document.getElementById(id).textContent = newtext
+
+        }
+
+        function RandomTitle(){
+
+            var titles = ['А?', 'Х41ня', 'zxc demon 7к узник ⛥⛥savage⛥⛥', 'Mishamie', 'страшно выруби', 'рыба', 'почему не в бане', 'свiстопердiлка ', 'ваза', '...', 'лабак на esef', 'мишаме', 'мишамие', 'мишами', 'зхкусрт', 'забанен', 'противный', '8ы6174д0к', '5 поз няша', 'сатир душекрад', 'Я давно умер 💀', 'улица мира', 'геншир', '7100 --> 6900', 'йупийо', 'Хумпл)'];
+            var RandomIndex = Math.floor(Math.random() * titles.length)
+            var newtitle = titles[RandomIndex];
+
+            var mainTitleElement = document.getElementById('Main_Title');
+            mainTitleElement.textContent = '';
+
+            var akaText = document.createElement('span');
+            akaText.textContent = 'AKA ';
+            akaText.style.color = '#7c797e';
+            akaText.style.fontSize = 'smaller'
+
+            var mainTitleText = document.createTextNode(newtitle)
+            mainTitleElement.appendChild(akaText);
+            mainTitleElement.appendChild(mainTitleText);
+           
+            
+        }
+
+        setTimeout(function() {
+            setInterval(RandomTitle, 2500);
+        }, 5500);
+
+
+    </script>
+
+        
+
+</head>
+<body>
+    <header>
+        <div id="header_content">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLx75Bwoi9L-qU8c1eDNmD4mq9FBvACuR0Abr5LBx_n1iQ=s360-c-no" width="175px" height="175px" class="animate__animated animate__backInDown">
+            <h1 class="animate__animated animate__flash" id="Main_Title">Mishamie</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="content"><div class="link animate__animated animate__backInLeft" id="telegrambtn" onclick="window.open('https://t.me/mishamie')" onmouseout="ChangeImage('telegram', 'telegram.png'); ChangeText('TelegramText', 'Telegram')" onmouseover="ChangeImage('telegram', 'telegram2.png'); ChangeText('TelegramText', 'Канал')"><img src="telegram.png" id="telegram" ><p id="TelegramText">Telegram</p></div></div>
+        <div id="content"><div class="link animate__animated animate__bounceInLeft" id="vkbtn" onclick="window.open('https://vk.com/mishamie')" onmouseout="ChangeImage('vk', 'vk.png'); ChangeText('VKText', 'ВКонтакте')" onmouseover="ChangeImage('vk', 'vk2.png'); ChangeText('VKText', 'Страница')"><img src="vk.png" id="vk"><p id="VKText">ВКонтакте</p></div></div>
+        <div id="content"><div class="link animate__animated animate__zoomIn" id="steambtn" onclick="window.open('https://steamcommunity.com/id/mishamie/')" onmouseout="ChangeImage('steam', 'steam.png'); ChangeText('SteamText', 'Steam')" onmouseover="ChangeImage('steam', 'steam2.png'); ChangeText('SteamText', 'Профиль')"><img src="steam.png" id="steam"><p id="SteamText">Steam</p></div></div>
+        <div id="content"><div class="link animate__animated animate__bounceInRight" id="discordbtn" onclick="window.open('https://discord.com/invite/qZVnXrcSnA')" onmouseout="ChangeImage('discord', 'discord.png'); ChangeText('DiscordText', 'Discord')" onmouseover="ChangeImage('discord', 'discord2.png'); ChangeText('DiscordText', 'Сервер')"><img src="discord.png" id="discord"><p id="DiscordText">Discord</p></div></div>
+        <div id="content"><div class="link animate__animated animate__backInRight" id="questionbtn" onclick="window.open('question.html')" onmouseout="ChangeImage('question', 'question.png'); ChangeText('QuestionText', 'Опросник')" onmouseover="ChangeImage('question', 'question2.png'); ChangeText('QuestionText', 'Задать вопрос')"><img src="question.png" id="question"><p id="QuestionText">Опросник</p></div></div>
+    </main>
+    <footer>
+        <div id="FooterText">
+            <h3 class="animate__animated animate__backInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo dolore omnis ipsa architecto perferendis a totam temporibus veritatis officiis nulla fuga quidem rem exercitationem asperiores, voluptas soluta quis impedit?</h3>
+        </div>
+    </footer>
+</body>
+</html>
