@@ -188,6 +188,7 @@ footer {
             
     main {
         display: block;
+        overflow: hidden;
         padding-top: 0;
     }
    
